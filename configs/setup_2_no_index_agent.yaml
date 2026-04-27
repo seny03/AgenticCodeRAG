@@ -1,0 +1,16 @@
+name: no_index_agent
+description: "Agent loop with basic file navigation only (open_file, grep_search). No semantic index."
+
+enabled_tools:
+  - repo_tree
+  - open_file
+  - grep_search
+  - apply_patch
+  - run_lint
+  - run_tests
+  - show_diff
+
+agent:
+  max_retries: 0
+  max_tool_calls_per_phase: 15
+  max_total_tool_calls: 60

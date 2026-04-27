@@ -1,0 +1,29 @@
+name: full_agent_retry
+description: "Full agent: file navigation + BM25 + vector + DraCo graph tools + verify/retry loop."
+
+enabled_tools:
+  - repo_tree
+  - open_file
+  - grep_search
+  - bm25_search
+  - vector_search
+  - symbol_search
+  - goto_definition
+  - find_references
+  - find_implementations
+  - get_callers
+  - get_callees
+  - graph_neighbors
+  - retrieve_context_for_location
+  - retrieve_context_for_task
+  - context_pack
+  - apply_patch
+  - run_lint
+  - run_tests
+  - run_command
+  - show_diff
+
+agent:
+  max_retries: 3
+  max_tool_calls_per_phase: 15
+  max_total_tool_calls: 80

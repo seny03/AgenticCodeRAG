@@ -1,0 +1,19 @@
+name: static_rag
+description: >
+  Static RAG baseline: retrieve context programmatically (BM25 + DraCo),
+  inject it into a single prompt, call the model once. No agent loop, no tool calls.
+
+mode: static_rag
+
+retrieval:
+  bm25_top_k: 5
+  draco_context: true
+  token_budget: 4000
+
+enabled_tools: []
+disabled_tools: []
+
+agent:
+  max_retries: 0
+  max_tool_calls_per_phase: 0
+  max_total_tool_calls: 0

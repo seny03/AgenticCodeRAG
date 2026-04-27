@@ -1,0 +1,12 @@
+name: zero_shot
+description: "Zero-shot baseline: send only the task text to the model, no retrieval, no tools"
+
+mode: zero_shot
+
+enabled_tools: []
+disabled_tools: []
+
+agent:
+  max_retries: 0
+  max_tool_calls_per_phase: 0
+  max_total_tool_calls: 0

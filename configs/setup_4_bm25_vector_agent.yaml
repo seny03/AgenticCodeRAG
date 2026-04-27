@@ -1,0 +1,18 @@
+name: bm25_vector_agent
+description: "Agent loop with file navigation + BM25 + vector semantic search. No DraCo graph."
+
+enabled_tools:
+  - repo_tree
+  - open_file
+  - grep_search
+  - bm25_search
+  - vector_search
+  - apply_patch
+  - run_lint
+  - run_tests
+  - show_diff
+
+agent:
+  max_retries: 0
+  max_tool_calls_per_phase: 15
+  max_total_tool_calls: 60
