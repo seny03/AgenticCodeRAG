@@ -1,0 +1,21 @@
+.venv
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+
+# Tools
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Vendor (cloned external repos with scripts/setup_deps.sh)
+vendor/
+
+# Benchmark artifacts
+.draco_graph/
+results/
